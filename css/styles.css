@@ -57,13 +57,6 @@ img {
 .nav-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
-  margin-left: auto;
 }
 
 .logo {
@@ -74,6 +67,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-accent {
@@ -94,6 +88,12 @@ img {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-link {
@@ -119,6 +119,9 @@ img {
   color: #ffffff;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -133,6 +136,7 @@ img {
   padding: 16px 32px;
   margin: 0 auto;
   display: block;
+  min-width: 169px;
 }
 
 .hero-button:hover,
@@ -202,6 +206,11 @@ img {
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
+
+.team-card {
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -216,7 +225,6 @@ img {
 
 .team-position {
   color: #434455;
-  padding: 0 16px 32px;
 }
 
 .portfolio {
@@ -241,6 +249,11 @@ img {
 
 .portfolio-item {
   border: 1px solid #e7e9fc;
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card {
+  padding: 32px 16px;
   border-top: none;
 }
 
@@ -255,7 +268,6 @@ img {
 
 .portfolio-text {
   color: #434455;
-  padding: 0 16px 32px 16px;
 }
 
 .footer {
@@ -263,12 +275,16 @@ img {
   padding: 100px 0;
 }
 
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .logo-accent-footer {
   color: #f4f4fd;
 }
 
-.footer-text {
+.footer-desc {
   color: #f4f4fd;
-  margin-top: 16px;
   max-width: 264px;
 }
